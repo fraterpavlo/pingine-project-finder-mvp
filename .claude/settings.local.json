@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"D:/JOB/IVAN.NOVIKOV/ProjectFinder/project-finder/data/projectfinder.sqlite\" /tmp/pf_snap.sqlite)",
+      "Bash(sqlite3 /tmp/pf_snap.sqlite \"PRAGMA integrity_check;\")",
+      "Bash(cp \"D:/JOB/IVAN.NOVIKOV/ProjectFinder/project-finder/data/projectfinder.sqlite.backup\" /tmp/pf_backup.sqlite)",
+      "Read(//tmp/**)",
+      "Bash(py -3 --version)",
+      "Bash(py -3 -c ':*)",
+      "Bash(ls -la D:/JOB/IVAN.NOVIKOV/ProjectFinder/project-finder/data/*.sqlite*)",
+      "mcp__scheduled-tasks__list_scheduled_tasks",
+      "Bash(ls project-finder/data/.fuse_hidden* project-finder/data/inbox.json .test_write)",
+      "Bash(mv project-finder/data/projectfinder.sqlite project-finder/data/projectfinder.sqlite.corrupted-2026-04-16)",
+      "Bash(ls -la project-finder/data/projectfinder.sqlite*)",
+      "Bash(PYTHONIOENCODING=utf-8 py -3 project-finder/scripts/pf_intents.py)",
+      "Bash(cat project-finder/data/intents/pending/*.json)",
+      "Bash(PYTHONIOENCODING=utf-8 py -3 project-finder/scripts/ops_applier.py --once)",
+      "Bash(rm -rf project-finder/data/intents/applied project-finder/data/intents/failed project-finder/data/snapshot.sqlite)",
+      "Bash(mkdir -p project-finder/data/intents/applied project-finder/data/intents/failed)",
+      "Bash(PYTHONIOENCODING=utf-8 py -3 project-finder/scripts/pf_policy.py)",
+      "Bash(rm -rf project-finder/data/intents/applied/* project-finder/data/intents/failed/* project-finder/data/snapshot.sqlite)",
+      "Bash(rm -rf project-finder/skills/run-pipeline)",
+      "Bash(rm -f ANALYSIS.md REVIEW-2026-04-16.md)",
+      "Bash(rm -f заметки.txt HANDOFF.md ProjectFinder-implementation-plan.md ProjectFinder-overview.drawio ProjectFinder-pipeline.drawio ProjectFinder-source-discovery.drawio ProjectFinder-system.md project-finder/data/projectfinder.sqlite.backup project-finder/data/projectfinder.sqlite.corrupted-2026-04-16)",
+      "Bash(rmdir project-finder/data/drafts project-finder/data/reports)",
+      "Bash(python -c \"import sqlite3; c=sqlite3.connect\\('project-finder/data/snapshot.sqlite'\\); c.row_factory=sqlite3.Row; print\\('jobs:', c.execute\\('SELECT COUNT\\(*\\) FROM jobs'\\).fetchone\\(\\)[0]\\); print\\('conversations:', c.execute\\('SELECT COUNT\\(*\\) FROM conversations'\\).fetchone\\(\\)[0]\\); print\\('outgoing:', c.execute\\('SELECT id, status, channel, recipient, developer_id FROM outgoing_messages'\\).fetchall\\(\\)\\)\")",
+      "Bash(python -c ':*)",
+      "Bash(ls -la D:/JOB/IVAN.NOVIKOV/ProjectFinder/*.md)"
+    ]
+  }
+}

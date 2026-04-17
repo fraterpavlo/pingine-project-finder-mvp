@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {
+      "id": "tg-test-projectfinder-pingine",
+      "name": "Test Channel ProjectFinder",
+      "scan_method": "telegram",
+      "enabled": true,
+      "url": "https://t.me/testChannelProjectFinderPingineT",
+      "telegram_handle": "testChannelProjectFinderPingineT"
+    }
+  ],
+  "scan_settings": {
+    "max_vacancy_age_days": 7,
+    "retry_on_failure": true
+  }
+}

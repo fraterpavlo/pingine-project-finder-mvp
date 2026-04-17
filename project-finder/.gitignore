@@ -1,0 +1,26 @@
+# Секреты — боевые креденшелы
+config/secrets.json
+
+# Telethon session — auth-ключ от Telegram-аккаунта
+scripts/*.session
+
+# Python байт-код
+__pycache__/
+*.pyc
+
+# SQLite — основная БД и её WAL/SHM-спутники
+data/projectfinder.sqlite
+data/projectfinder.sqlite-wal
+data/projectfinder.sqlite-shm
+
+# Read-only snapshot для Cowork (публикуется ops_applier каждые 60с)
+data/snapshot.sqlite*
+
+# Intent-queue runtime state (команды от Cowork → ops_applier)
+data/intents/
+
+# Ежесуточные бэкапы БД
+data/backups/
+
+# Логи
+logs/

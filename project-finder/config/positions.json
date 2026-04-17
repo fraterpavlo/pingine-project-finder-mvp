@@ -1,0 +1,65 @@
+{
+  "positions": [
+    {
+      "id": "react-frontend",
+      "title": "React Frontend Developer",
+      "level": "middle-senior",
+      "keywords": {
+        "must_match": ["frontend", "front-end", "react", "UI"],
+        "nice_to_have": ["TypeScript", "Next.js", "Redux", "REST API", "GraphQL", "Tailwind", "Material UI"],
+        "role_indicators": ["frontend developer", "front-end engineer", "react developer", "UI developer", "web developer"]
+      },
+      "experience_years_hint": 3,
+      "rate_range": {
+        "min_usd_monthly": 2000
+      },
+      "notes": "Совпадение стека вторично. Главное: позиция frontend-направленности. React — основной фреймворк, но мы рассматриваем и другие фреймворки (Vue, Angular и т.д.) — это тоже frontend-работа. Для конкретного фреймворка можно создать отдельную позицию в списке. Вакансия с меньшим требуемым опытом — нормально."
+    },
+    {
+      "id": "java-backend",
+      "title": "Java Backend Developer",
+      "level": "middle-senior",
+      "keywords": {
+        "must_match": ["backend", "back-end", "java", "server-side"],
+        "nice_to_have": ["Spring", "Spring Boot", "Microservices", "PostgreSQL", "Kafka", "Docker", "Kubernetes", "REST API"],
+        "role_indicators": ["backend developer", "back-end engineer", "java developer", "server-side developer", "software engineer"]
+      },
+      "experience_years_hint": 3,
+      "rate_range": {
+        "min_usd_monthly": 2000
+      },
+      "notes": "Java — основной язык. Spring/Spring Boot очень распространён в команде. Микросервисная архитектура — плюс. Вакансия с меньшим требуемым опытом — нормально."
+    },
+    {
+      "id": "fullstack",
+      "title": "Fullstack Developer",
+      "level": "middle-senior",
+      "keywords": {
+        "must_match": ["fullstack", "full-stack", "full stack"],
+        "nice_to_have": ["React", "Node.js", "TypeScript", "Java", "Spring", "Next.js", "Express", "NestJS", "PostgreSQL", "MongoDB", "REST API", "GraphQL", "Docker"],
+        "role_indicators": ["fullstack developer", "full-stack engineer", "full stack developer", "web developer", "software engineer"]
+      },
+      "experience_years_hint": 3,
+      "rate_range": {
+        "min_usd_monthly": 2000
+      },
+      "notes": "Fullstack-позиции подходят как frontend-, так и backend-разработчикам из команды. Наиболее релевантные комбинации: React+Node.js, React+Java, React+любой backend. Но рассматриваем любые fullstack-вакансии, если frontend- или backend-часть совпадает с нашим стеком. Вакансия с меньшим требуемым опытом — нормально."
+    }
+  ],
+  "global_filters": {
+    "work_format": ["remote", "hybrid"],
+    "contract_types": ["full-time", "contract", "outsource", "outstaff", "freelance", "B2B"],
+    "exclude_keywords": ["unpaid", "intern", "trainee", "volunteer", "стажёр", "неоплачиваемая", "волонтёр"],
+    "geography_preference": "remote-first, любой часовой пояс"
+  },
+  "application_rules": {
+    "model": "individual_candidate",
+    "description": "Каждый разработчик откликается как индивидуальный кандидат. Работодатель НЕ должен знать о существовании команды, компании или автоматизации. Все коммуникации выглядят как обычное трудоустройство обычного человека.",
+    "forbidden_in_communications": [
+      "упоминание команды или компании",
+      "упоминание автоматизации поиска",
+      "упоминание того, что на одну вакансию могут откликнуться несколько наших людей",
+      "любые формулировки от лица группы (мы, наша команда, и т.д.)"
+    ]
+  }
+}

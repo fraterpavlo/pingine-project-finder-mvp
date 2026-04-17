@@ -1,0 +1,779 @@
+[15:29:15] [launcher] ============================================================
+[15:29:15] [launcher] ProjectFinder launcher started
+[15:29:15] [launcher] Services: ['scanner', 'notifier', 'tg_io', 'bot_hndl', 'email_io']
+[15:29:15] [launcher] Logs: D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\logs\projectfinder.log
+[15:29:15] [launcher] Press Ctrl+C to stop all services gracefully
+[15:29:15] [launcher] ============================================================
+[15:29:15] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[15:29:16] [scanner ] [2026-04-15 15:29:16] Watch mode (interval: 30 min). Ctrl+C to stop.
+[15:29:16] [scanner ] [2026-04-15 15:29:16] Scanning 2 Telegram channels...
+[15:29:16] [scanner ] Traceback (most recent call last):
+[15:29:16] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 356, in <module>
+[15:29:16] [scanner ]     main()
+[15:29:16] [scanner ]     ~~~~^^
+[15:29:16] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 345, in main
+[15:29:16] [scanner ]     count = run_scan()
+[15:29:16] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 283, in run_scan
+[15:29:16] [scanner ]     with TelegramClient(str(session_path), api_id, api_hash) as client:
+[15:29:16] [scanner ]          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[15:29:16] [scanner ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 274, in __init__
+[15:29:16] [scanner ]     raise ValueError(
+[15:29:16] [scanner ]         "Your API ID or Hash cannot be empty or None. "
+[15:29:16] [scanner ]         "Refer to telethon.rtfd.io for more information.")
+[15:29:16] [scanner ] ValueError: Your API ID or Hash cannot be empty or None. Refer to telethon.rtfd.io for more information.
+[15:29:16] [scanner ] exited with code 1. Restart in 30s...
+[15:29:16] [notifier] starting: telegram_notifier.py --watch --interval 60
+[15:29:17] [tg_io   ] starting: telegram_io.py --watch
+[15:29:18] [bot_hndl] starting: bot_handler.py
+[15:29:18] [bot_hndl] [15:29:18] [bot     ] bot handler started; polling getUpdates...
+[15:29:19] [email_io] starting: email_io.py --watch
+[15:29:20] [email_io] [15:29:20] [email   ] email I/O started (SMTP send + IMAP listen)
+[15:29:20] [tg_io   ] [15:29:20] [tg_io  ] connected as Telegram user self
+[15:29:20] [tg_io   ] [15:29:20] [tg_io  ] listener active. Polling outgoing every 30s. Ctrl+C to stop.
+[15:29:46] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[15:29:47] [scanner ] [2026-04-15 15:29:47] Watch mode (interval: 30 min). Ctrl+C to stop.
+[15:29:47] [scanner ] [2026-04-15 15:29:47] Scanning 2 Telegram channels...
+[15:29:47] [scanner ] Traceback (most recent call last):
+[15:29:47] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 356, in <module>
+[15:29:47] [scanner ]     main()
+[15:29:47] [scanner ]     ~~~~^^
+[15:29:47] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 345, in main
+[15:29:47] [scanner ]     count = run_scan()
+[15:29:47] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 283, in run_scan
+[15:29:47] [scanner ]     with TelegramClient(str(session_path), api_id, api_hash) as client:
+[15:29:47] [scanner ]          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[15:29:47] [scanner ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 274, in __init__
+[15:29:47] [scanner ]     raise ValueError(
+[15:29:47] [scanner ]         "Your API ID or Hash cannot be empty or None. "
+[15:29:47] [scanner ]         "Refer to telethon.rtfd.io for more information.")
+[15:29:47] [scanner ] ValueError: Your API ID or Hash cannot be empty or None. Refer to telethon.rtfd.io for more information.
+[15:29:47] [scanner ] exited with code 1. Restart in 30s...
+[15:30:17] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[15:30:17] [scanner ] [2026-04-15 15:30:17] Watch mode (interval: 30 min). Ctrl+C to stop.
+[15:30:17] [scanner ] [2026-04-15 15:30:17] Scanning 2 Telegram channels...
+[15:30:17] [scanner ] Traceback (most recent call last):
+[15:30:17] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 356, in <module>
+[15:30:17] [scanner ]     main()
+[15:30:17] [scanner ]     ~~~~^^
+[15:30:17] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 345, in main
+[15:30:17] [scanner ]     count = run_scan()
+[15:30:17] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 283, in run_scan
+[15:30:17] [scanner ]     with TelegramClient(str(session_path), api_id, api_hash) as client:
+[15:30:17] [scanner ]          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[15:30:17] [scanner ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 274, in __init__
+[15:30:17] [scanner ]     raise ValueError(
+[15:30:17] [scanner ]         "Your API ID or Hash cannot be empty or None. "
+[15:30:17] [scanner ]         "Refer to telethon.rtfd.io for more information.")
+[15:30:17] [scanner ] ValueError: Your API ID or Hash cannot be empty or None. Refer to telethon.rtfd.io for more information.
+[15:30:17] [scanner ] exited with code 1. Restart in 30s...
+[15:30:47] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[15:30:48] [scanner ] [2026-04-15 15:30:48] Watch mode (interval: 30 min). Ctrl+C to stop.
+[15:30:48] [scanner ] [2026-04-15 15:30:48] Scanning 2 Telegram channels...
+[15:30:48] [scanner ] Traceback (most recent call last):
+[15:30:48] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 356, in <module>
+[15:30:48] [scanner ]     main()
+[15:30:48] [scanner ]     ~~~~^^
+[15:30:48] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 345, in main
+[15:30:48] [scanner ]     count = run_scan()
+[15:30:48] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 283, in run_scan
+[15:30:48] [scanner ]     with TelegramClient(str(session_path), api_id, api_hash) as client:
+[15:30:48] [scanner ]          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[15:30:48] [scanner ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 274, in __init__
+[15:30:48] [scanner ]     raise ValueError(
+[15:30:48] [scanner ]         "Your API ID or Hash cannot be empty or None. "
+[15:30:48] [scanner ]         "Refer to telethon.rtfd.io for more information.")
+[15:30:48] [scanner ] ValueError: Your API ID or Hash cannot be empty or None. Refer to telethon.rtfd.io for more information.
+[15:30:48] [scanner ] exited with code 1. Restart in 30s...
+[15:31:18] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[15:31:18] [scanner ] [2026-04-15 15:31:18] Watch mode (interval: 30 min). Ctrl+C to stop.
+[15:31:18] [scanner ] [2026-04-15 15:31:18] Scanning 2 Telegram channels...
+[15:31:18] [scanner ] Traceback (most recent call last):
+[15:31:18] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 356, in <module>
+[15:31:18] [scanner ]     main()
+[15:31:18] [scanner ]     ~~~~^^
+[15:31:18] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 345, in main
+[15:31:18] [scanner ]     count = run_scan()
+[15:31:18] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 283, in run_scan
+[15:31:18] [scanner ]     with TelegramClient(str(session_path), api_id, api_hash) as client:
+[15:31:18] [scanner ]          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[15:31:18] [scanner ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 274, in __init__
+[15:31:18] [scanner ]     raise ValueError(
+[15:31:18] [scanner ]         "Your API ID or Hash cannot be empty or None. "
+[15:31:18] [scanner ]         "Refer to telethon.rtfd.io for more information.")
+[15:31:18] [scanner ] ValueError: Your API ID or Hash cannot be empty or None. Refer to telethon.rtfd.io for more information.
+[15:31:18] [scanner ] exited with code 1. Restart in 30s...
+[15:31:48] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[15:31:49] [scanner ] [2026-04-15 15:31:49] Watch mode (interval: 30 min). Ctrl+C to stop.
+[15:31:49] [scanner ] [2026-04-15 15:31:49] Scanning 2 Telegram channels...
+[15:31:49] [scanner ] Traceback (most recent call last):
+[15:31:49] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 356, in <module>
+[15:31:49] [scanner ]     main()
+[15:31:49] [scanner ]     ~~~~^^
+[15:31:49] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 345, in main
+[15:31:49] [scanner ]     count = run_scan()
+[15:31:49] [scanner ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_scanner.py", line 283, in run_scan
+[15:31:49] [scanner ]     with TelegramClient(str(session_path), api_id, api_hash) as client:
+[15:31:49] [scanner ]          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[15:31:49] [scanner ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\site-packages\telethon\client\telegrambaseclient.py", line 274, in __init__
+[15:31:49] [scanner ]     raise ValueError(
+[15:31:49] [scanner ]         "Your API ID or Hash cannot be empty or None. "
+[15:31:49] [scanner ]         "Refer to telethon.rtfd.io for more information.")
+[15:31:49] [scanner ] ValueError: Your API ID or Hash cannot be empty or None. Refer to telethon.rtfd.io for more information.
+[15:31:49] [scanner ] exited with code 1. Restart in 30s...
+[15:32:19] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[15:33:08] [email_io] [15:33:08] [email   ] stopped by user
+[15:33:08] [notifier] [2026-04-15 15:29:17] Watch mode started (interval: 60s). Ctrl+C to stop.
+[15:33:08] [scanner ] [2026-04-15 15:32:19] Watch mode (interval: 30 min). Ctrl+C to stop.
+[15:33:08] [email_io] stopping (shutdown requested)
+[15:33:08] [notifier] stopping (shutdown requested)
+[15:33:08] [tg_io   ] Traceback (most recent call last):
+[15:33:08] [scanner ] stopping (shutdown requested)
+[15:33:08] [tg_io   ] stopping (shutdown requested)
+[15:33:17] [launcher] ============================================================
+[15:33:17] [launcher] ProjectFinder launcher started
+[15:33:17] [launcher] Services: ['scanner', 'notifier', 'tg_io', 'bot_hndl', 'email_io']
+[15:33:17] [launcher] Logs: D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\logs\projectfinder.log
+[15:33:17] [launcher] Press Ctrl+C to stop all services gracefully
+[15:33:17] [launcher] ============================================================
+[15:33:17] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[15:33:18] [notifier] starting: telegram_notifier.py --watch --interval 60
+[15:33:19] [tg_io   ] starting: telegram_io.py --watch
+[15:33:20] [bot_hndl] starting: bot_handler.py
+[15:33:20] [bot_hndl] [15:33:20] [bot     ] bot handler started; polling getUpdates...
+[15:33:21] [email_io] starting: email_io.py --watch
+[15:33:21] [email_io] [15:33:21] [email   ] email I/O started (SMTP send + IMAP listen)
+[15:33:23] [tg_io   ] [15:33:23] [tg_io  ] connected as Telegram user self
+[15:33:23] [tg_io   ] [15:33:23] [tg_io  ] listener active. Polling outgoing every 30s. Ctrl+C to stop.
+[16:55:05] [email_io] exited with code 3221225786. Restart in 30s...
+[16:55:05] [bot_hndl] exited with code 3221225786. Restart in 30s...
+[16:55:05] [tg_io   ] exited with code 3221225786. Restart in 30s...
+[16:55:05] [notifier] exited with code 3221225786. Restart in 30s...
+[16:55:05] [scanner ] exited with code 3221225786. Restart in 30s...
+[17:06:37] [launcher] ============================================================
+[17:06:37] [launcher] ProjectFinder launcher started
+[17:06:37] [launcher] Services: ['scanner', 'notifier', 'tg_io', 'bot_hndl', 'email_io']
+[17:06:37] [launcher] Logs: D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\logs\projectfinder.log
+[17:06:37] [launcher] Press Ctrl+C to stop all services gracefully
+[17:06:37] [launcher] ============================================================
+[17:06:37] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[17:06:37] [scanner ] [2026-04-15 17:06:37] Watch mode (interval: 30 min). Ctrl+C to stop.
+[17:06:37] [scanner ] [2026-04-15 17:06:37] No enabled Telegram sources in sources.json.
+[17:06:37] [scanner ] [2026-04-15 17:06:37] Cycle done. 0 new. Sleeping 30 min...
+[17:06:38] [notifier] starting: telegram_notifier.py --watch --interval 60
+[17:06:38] [notifier] [2026-04-15 17:06:38] Watch mode started (interval: 60s). Ctrl+C to stop.
+[17:06:39] [tg_io   ] starting: telegram_io.py --watch
+[17:06:40] [bot_hndl] starting: bot_handler.py
+[17:06:40] [bot_hndl] [17:06:40] [bot     ] bot handler started; polling getUpdates...
+[17:06:41] [email_io] starting: email_io.py --watch
+[17:06:56] [tg_io   ] Traceback (most recent call last):
+[17:06:56] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 273, in <module>
+[17:06:56] [tg_io   ]     main()
+[17:06:56] [tg_io   ]     ~~~~^^
+[17:06:56] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 269, in main
+[17:06:56] [tg_io   ]     asyncio.run(main_async(once=args.once))
+[17:06:56] [tg_io   ]     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[17:06:56] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+[17:06:56] [tg_io   ]     return runner.run(main)
+[17:06:56] [tg_io   ]            ~~~~~~~~~~^^^^^^
+[17:06:56] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+[17:06:56] [tg_io   ]     return self._loop.run_until_complete(task)
+[17:06:56] [tg_io   ]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[17:06:56] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+[17:06:56] [tg_io   ]     return future.result()
+[17:06:56] [tg_io   ]            ~~~~~~~~~~~~~^^
+[17:06:56] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 218, in main_async
+[17:06:56] [tg_io   ]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:06:56] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:06:56] [tg_io   ]     cur = get_db().execute(
+[17:06:56] [tg_io   ]         "UPDATE outgoing_messages "
+[17:06:56] [tg_io   ]     ...<3 lines>...
+[17:06:56] [tg_io   ]         (threshold, cutoff_iso),
+[17:06:56] [tg_io   ]     )
+[17:06:56] [tg_io   ] sqlite3.OperationalError: database is locked
+[17:06:56] [tg_io   ] exited with code 1. Restart in 30s...
+[17:06:57] [email_io] Traceback (most recent call last):
+[17:06:57] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 265, in <module>
+[17:06:57] [email_io]     main()
+[17:06:57] [email_io]     ~~~~^^
+[17:06:57] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 236, in main
+[17:06:57] [email_io]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:06:57] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:06:57] [email_io]     cur = get_db().execute(
+[17:06:57] [email_io]         "UPDATE outgoing_messages "
+[17:06:57] [email_io]     ...<3 lines>...
+[17:06:57] [email_io]         (threshold, cutoff_iso),
+[17:06:57] [email_io]     )
+[17:06:57] [email_io] sqlite3.OperationalError: database is locked
+[17:06:58] [email_io] exited with code 1. Restart in 30s...
+[17:07:26] [tg_io   ] starting: telegram_io.py --watch
+[17:07:28] [email_io] starting: email_io.py --watch
+[17:07:43] [tg_io   ] Traceback (most recent call last):
+[17:07:43] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 273, in <module>
+[17:07:43] [tg_io   ]     main()
+[17:07:43] [tg_io   ]     ~~~~^^
+[17:07:43] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 269, in main
+[17:07:43] [tg_io   ]     asyncio.run(main_async(once=args.once))
+[17:07:43] [tg_io   ]     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[17:07:43] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+[17:07:43] [tg_io   ]     return runner.run(main)
+[17:07:43] [tg_io   ]            ~~~~~~~~~~^^^^^^
+[17:07:43] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+[17:07:43] [tg_io   ]     return self._loop.run_until_complete(task)
+[17:07:43] [tg_io   ]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[17:07:43] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+[17:07:43] [tg_io   ]     return future.result()
+[17:07:43] [tg_io   ]            ~~~~~~~~~~~~~^^
+[17:07:43] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 218, in main_async
+[17:07:43] [tg_io   ]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:07:43] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:07:43] [tg_io   ]     cur = get_db().execute(
+[17:07:43] [tg_io   ]         "UPDATE outgoing_messages "
+[17:07:43] [tg_io   ]     ...<3 lines>...
+[17:07:43] [tg_io   ]         (threshold, cutoff_iso),
+[17:07:43] [tg_io   ]     )
+[17:07:43] [tg_io   ] sqlite3.OperationalError: database is locked
+[17:07:43] [tg_io   ] exited with code 1. Restart in 30s...
+[17:07:44] [email_io] Traceback (most recent call last):
+[17:07:44] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 265, in <module>
+[17:07:44] [email_io]     main()
+[17:07:44] [email_io]     ~~~~^^
+[17:07:44] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 236, in main
+[17:07:44] [email_io]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:07:44] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:07:44] [email_io]     cur = get_db().execute(
+[17:07:44] [email_io]         "UPDATE outgoing_messages "
+[17:07:44] [email_io]     ...<3 lines>...
+[17:07:44] [email_io]         (threshold, cutoff_iso),
+[17:07:44] [email_io]     )
+[17:07:44] [email_io] sqlite3.OperationalError: database is locked
+[17:07:44] [email_io] exited with code 1. Restart in 30s...
+[17:08:13] [tg_io   ] starting: telegram_io.py --watch
+[17:08:14] [email_io] starting: email_io.py --watch
+[17:08:30] [tg_io   ] Traceback (most recent call last):
+[17:08:30] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 273, in <module>
+[17:08:30] [tg_io   ]     main()
+[17:08:30] [tg_io   ]     ~~~~^^
+[17:08:30] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 269, in main
+[17:08:30] [tg_io   ]     asyncio.run(main_async(once=args.once))
+[17:08:30] [tg_io   ]     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[17:08:30] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+[17:08:30] [tg_io   ]     return runner.run(main)
+[17:08:30] [tg_io   ]            ~~~~~~~~~~^^^^^^
+[17:08:30] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+[17:08:30] [tg_io   ]     return self._loop.run_until_complete(task)
+[17:08:30] [tg_io   ]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[17:08:30] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+[17:08:30] [tg_io   ]     return future.result()
+[17:08:30] [tg_io   ]            ~~~~~~~~~~~~~^^
+[17:08:30] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 218, in main_async
+[17:08:30] [tg_io   ]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:08:30] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:08:30] [tg_io   ]     cur = get_db().execute(
+[17:08:30] [tg_io   ]         "UPDATE outgoing_messages "
+[17:08:30] [tg_io   ]     ...<3 lines>...
+[17:08:30] [tg_io   ]         (threshold, cutoff_iso),
+[17:08:30] [tg_io   ]     )
+[17:08:30] [tg_io   ] sqlite3.OperationalError: database is locked
+[17:08:30] [tg_io   ] exited with code 1. Restart in 30s...
+[17:08:31] [email_io] Traceback (most recent call last):
+[17:08:31] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 265, in <module>
+[17:08:31] [email_io]     main()
+[17:08:31] [email_io]     ~~~~^^
+[17:08:31] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 236, in main
+[17:08:31] [email_io]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:08:31] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:08:31] [email_io]     cur = get_db().execute(
+[17:08:31] [email_io]         "UPDATE outgoing_messages "
+[17:08:31] [email_io]     ...<3 lines>...
+[17:08:31] [email_io]         (threshold, cutoff_iso),
+[17:08:31] [email_io]     )
+[17:08:31] [email_io] sqlite3.OperationalError: database is locked
+[17:08:31] [email_io] exited with code 1. Restart in 30s...
+[17:09:00] [tg_io   ] starting: telegram_io.py --watch
+[17:09:01] [email_io] starting: email_io.py --watch
+[17:09:17] [tg_io   ] Traceback (most recent call last):
+[17:09:17] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 273, in <module>
+[17:09:17] [tg_io   ]     main()
+[17:09:17] [tg_io   ]     ~~~~^^
+[17:09:17] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 269, in main
+[17:09:17] [tg_io   ]     asyncio.run(main_async(once=args.once))
+[17:09:17] [tg_io   ]     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[17:09:17] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+[17:09:17] [tg_io   ]     return runner.run(main)
+[17:09:17] [tg_io   ]            ~~~~~~~~~~^^^^^^
+[17:09:17] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+[17:09:17] [tg_io   ]     return self._loop.run_until_complete(task)
+[17:09:17] [tg_io   ]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[17:09:17] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+[17:09:17] [tg_io   ]     return future.result()
+[17:09:17] [tg_io   ]            ~~~~~~~~~~~~~^^
+[17:09:17] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 218, in main_async
+[17:09:17] [tg_io   ]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:09:17] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:09:17] [tg_io   ]     cur = get_db().execute(
+[17:09:17] [tg_io   ]         "UPDATE outgoing_messages "
+[17:09:17] [tg_io   ]     ...<3 lines>...
+[17:09:17] [tg_io   ]         (threshold, cutoff_iso),
+[17:09:17] [tg_io   ]     )
+[17:09:17] [tg_io   ] sqlite3.OperationalError: database is locked
+[17:09:17] [tg_io   ] exited with code 1. Restart in 30s...
+[17:09:17] [email_io] Traceback (most recent call last):
+[17:09:17] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 265, in <module>
+[17:09:17] [email_io]     main()
+[17:09:17] [email_io]     ~~~~^^
+[17:09:17] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 236, in main
+[17:09:17] [email_io]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:09:17] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:09:17] [email_io]     cur = get_db().execute(
+[17:09:17] [email_io]         "UPDATE outgoing_messages "
+[17:09:17] [email_io]     ...<3 lines>...
+[17:09:17] [email_io]         (threshold, cutoff_iso),
+[17:09:17] [email_io]     )
+[17:09:17] [email_io] sqlite3.OperationalError: database is locked
+[17:09:17] [email_io] exited with code 1. Restart in 30s...
+[17:09:47] [tg_io   ] starting: telegram_io.py --watch
+[17:09:47] [email_io] starting: email_io.py --watch
+[17:10:03] [tg_io   ] Traceback (most recent call last):
+[17:10:03] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 273, in <module>
+[17:10:03] [tg_io   ]     main()
+[17:10:03] [tg_io   ]     ~~~~^^
+[17:10:03] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 269, in main
+[17:10:03] [tg_io   ]     asyncio.run(main_async(once=args.once))
+[17:10:03] [tg_io   ]     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[17:10:03] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+[17:10:03] [tg_io   ]     return runner.run(main)
+[17:10:03] [tg_io   ]            ~~~~~~~~~~^^^^^^
+[17:10:03] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+[17:10:03] [tg_io   ]     return self._loop.run_until_complete(task)
+[17:10:03] [tg_io   ]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[17:10:03] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+[17:10:03] [tg_io   ]     return future.result()
+[17:10:03] [tg_io   ]            ~~~~~~~~~~~~~^^
+[17:10:03] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 218, in main_async
+[17:10:03] [tg_io   ]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:10:03] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:10:03] [tg_io   ]     cur = get_db().execute(
+[17:10:03] [tg_io   ]         "UPDATE outgoing_messages "
+[17:10:03] [tg_io   ]     ...<3 lines>...
+[17:10:03] [tg_io   ]         (threshold, cutoff_iso),
+[17:10:03] [tg_io   ]     )
+[17:10:03] [tg_io   ] sqlite3.OperationalError: database is locked
+[17:10:03] [tg_io   ] exited with code 1. Restart in 30s...
+[17:10:04] [email_io] Traceback (most recent call last):
+[17:10:04] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 265, in <module>
+[17:10:04] [email_io]     main()
+[17:10:04] [email_io]     ~~~~^^
+[17:10:04] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 236, in main
+[17:10:04] [email_io]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:10:04] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:10:04] [email_io]     cur = get_db().execute(
+[17:10:04] [email_io]         "UPDATE outgoing_messages "
+[17:10:04] [email_io]     ...<3 lines>...
+[17:10:04] [email_io]         (threshold, cutoff_iso),
+[17:10:04] [email_io]     )
+[17:10:04] [email_io] sqlite3.OperationalError: database is locked
+[17:10:04] [email_io] exited with code 1. Restart in 30s...
+[17:10:33] [tg_io   ] starting: telegram_io.py --watch
+[17:10:34] [email_io] starting: email_io.py --watch
+[17:10:50] [email_io] Traceback (most recent call last):
+[17:10:50] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 265, in <module>
+[17:10:50] [email_io]     main()
+[17:10:50] [email_io]     ~~~~^^
+[17:10:50] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 236, in main
+[17:10:50] [email_io]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:10:50] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:10:50] [email_io]     cur = get_db().execute(
+[17:10:50] [email_io]         "UPDATE outgoing_messages "
+[17:10:50] [email_io]     ...<3 lines>...
+[17:10:50] [email_io]         (threshold, cutoff_iso),
+[17:10:50] [email_io]     )
+[17:10:50] [email_io] sqlite3.OperationalError: database is locked
+[17:10:50] [email_io] exited with code 1. Restart in 30s...
+[17:10:50] [tg_io   ] Traceback (most recent call last):
+[17:10:50] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 273, in <module>
+[17:10:50] [tg_io   ]     main()
+[17:10:50] [tg_io   ]     ~~~~^^
+[17:10:50] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 269, in main
+[17:10:50] [tg_io   ]     asyncio.run(main_async(once=args.once))
+[17:10:50] [tg_io   ]     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[17:10:50] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+[17:10:50] [tg_io   ]     return runner.run(main)
+[17:10:50] [tg_io   ]            ~~~~~~~~~~^^^^^^
+[17:10:50] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+[17:10:50] [tg_io   ]     return self._loop.run_until_complete(task)
+[17:10:50] [tg_io   ]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[17:10:50] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+[17:10:50] [tg_io   ]     return future.result()
+[17:10:50] [tg_io   ]            ~~~~~~~~~~~~~^^
+[17:10:50] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 218, in main_async
+[17:10:50] [tg_io   ]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:10:50] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:10:50] [tg_io   ]     cur = get_db().execute(
+[17:10:50] [tg_io   ]         "UPDATE outgoing_messages "
+[17:10:50] [tg_io   ]     ...<3 lines>...
+[17:10:50] [tg_io   ]         (threshold, cutoff_iso),
+[17:10:50] [tg_io   ]     )
+[17:10:50] [tg_io   ] sqlite3.OperationalError: database is locked
+[17:10:50] [tg_io   ] exited with code 1. Restart in 30s...
+[17:11:20] [email_io] starting: email_io.py --watch
+[17:11:20] [tg_io   ] starting: telegram_io.py --watch
+[17:11:36] [email_io] Traceback (most recent call last):
+[17:11:36] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 265, in <module>
+[17:11:36] [email_io]     main()
+[17:11:36] [email_io]     ~~~~^^
+[17:11:36] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 236, in main
+[17:11:36] [email_io]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:11:36] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:11:36] [email_io]     cur = get_db().execute(
+[17:11:36] [email_io]         "UPDATE outgoing_messages "
+[17:11:36] [email_io]     ...<3 lines>...
+[17:11:36] [email_io]         (threshold, cutoff_iso),
+[17:11:36] [email_io]     )
+[17:11:36] [email_io] sqlite3.OperationalError: database is locked
+[17:11:36] [email_io] exited with code 1. Restart in 30s...
+[17:11:37] [tg_io   ] Traceback (most recent call last):
+[17:11:37] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 273, in <module>
+[17:11:37] [tg_io   ]     main()
+[17:11:37] [tg_io   ]     ~~~~^^
+[17:11:37] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 269, in main
+[17:11:37] [tg_io   ]     asyncio.run(main_async(once=args.once))
+[17:11:37] [tg_io   ]     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[17:11:37] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+[17:11:37] [tg_io   ]     return runner.run(main)
+[17:11:37] [tg_io   ]            ~~~~~~~~~~^^^^^^
+[17:11:37] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+[17:11:37] [tg_io   ]     return self._loop.run_until_complete(task)
+[17:11:37] [tg_io   ]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[17:11:37] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+[17:11:37] [tg_io   ]     return future.result()
+[17:11:37] [tg_io   ]            ~~~~~~~~~~~~~^^
+[17:11:37] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 218, in main_async
+[17:11:37] [tg_io   ]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:11:37] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:11:37] [tg_io   ]     cur = get_db().execute(
+[17:11:37] [tg_io   ]         "UPDATE outgoing_messages "
+[17:11:37] [tg_io   ]     ...<3 lines>...
+[17:11:37] [tg_io   ]         (threshold, cutoff_iso),
+[17:11:37] [tg_io   ]     )
+[17:11:37] [tg_io   ] sqlite3.OperationalError: database is locked
+[17:11:37] [tg_io   ] exited with code 1. Restart in 30s...
+[17:12:06] [email_io] starting: email_io.py --watch
+[17:12:07] [tg_io   ] starting: telegram_io.py --watch
+[17:12:23] [email_io] Traceback (most recent call last):
+[17:12:23] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 265, in <module>
+[17:12:23] [email_io]     main()
+[17:12:23] [email_io]     ~~~~^^
+[17:12:23] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 236, in main
+[17:12:23] [email_io]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:12:23] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:12:23] [email_io]     cur = get_db().execute(
+[17:12:23] [email_io]         "UPDATE outgoing_messages "
+[17:12:23] [email_io]     ...<3 lines>...
+[17:12:23] [email_io]         (threshold, cutoff_iso),
+[17:12:23] [email_io]     )
+[17:12:23] [email_io] sqlite3.OperationalError: database is locked
+[17:12:23] [email_io] exited with code 1. Restart in 30s...
+[17:12:23] [tg_io   ] Traceback (most recent call last):
+[17:12:23] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 273, in <module>
+[17:12:23] [tg_io   ]     main()
+[17:12:23] [tg_io   ]     ~~~~^^
+[17:12:23] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 269, in main
+[17:12:23] [tg_io   ]     asyncio.run(main_async(once=args.once))
+[17:12:23] [tg_io   ]     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[17:12:23] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+[17:12:23] [tg_io   ]     return runner.run(main)
+[17:12:23] [tg_io   ]            ~~~~~~~~~~^^^^^^
+[17:12:23] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+[17:12:23] [tg_io   ]     return self._loop.run_until_complete(task)
+[17:12:23] [tg_io   ]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[17:12:23] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+[17:12:23] [tg_io   ]     return future.result()
+[17:12:23] [tg_io   ]            ~~~~~~~~~~~~~^^
+[17:12:23] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 218, in main_async
+[17:12:23] [tg_io   ]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:12:23] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:12:23] [tg_io   ]     cur = get_db().execute(
+[17:12:23] [tg_io   ]         "UPDATE outgoing_messages "
+[17:12:23] [tg_io   ]     ...<3 lines>...
+[17:12:23] [tg_io   ]         (threshold, cutoff_iso),
+[17:12:23] [tg_io   ]     )
+[17:12:23] [tg_io   ] sqlite3.OperationalError: database is locked
+[17:12:23] [tg_io   ] exited with code 1. Restart in 30s...
+[17:12:53] [email_io] starting: email_io.py --watch
+[17:12:53] [tg_io   ] starting: telegram_io.py --watch
+[17:13:09] [email_io] Traceback (most recent call last):
+[17:13:09] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 265, in <module>
+[17:13:09] [email_io]     main()
+[17:13:09] [email_io]     ~~~~^^
+[17:13:09] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\email_io.py", line 236, in main
+[17:13:09] [email_io]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:13:09] [email_io]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:13:09] [email_io]     cur = get_db().execute(
+[17:13:09] [email_io]         "UPDATE outgoing_messages "
+[17:13:09] [email_io]     ...<3 lines>...
+[17:13:09] [email_io]         (threshold, cutoff_iso),
+[17:13:09] [email_io]     )
+[17:13:09] [email_io] sqlite3.OperationalError: database is locked
+[17:13:09] [email_io] exited with code 1. Restart in 30s...
+[17:13:10] [tg_io   ] Traceback (most recent call last):
+[17:13:10] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 273, in <module>
+[17:13:10] [tg_io   ]     main()
+[17:13:10] [tg_io   ]     ~~~~^^
+[17:13:10] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 269, in main
+[17:13:10] [tg_io   ]     asyncio.run(main_async(once=args.once))
+[17:13:10] [tg_io   ]     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[17:13:10] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+[17:13:10] [tg_io   ]     return runner.run(main)
+[17:13:10] [tg_io   ]            ~~~~~~~~~~^^^^^^
+[17:13:10] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+[17:13:10] [tg_io   ]     return self._loop.run_until_complete(task)
+[17:13:10] [tg_io   ]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[17:13:10] [tg_io   ]   File "C:\Users\shuka\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+[17:13:10] [tg_io   ]     return future.result()
+[17:13:10] [tg_io   ]            ~~~~~~~~~~~~~^^
+[17:13:10] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\telegram_io.py", line 218, in main_async
+[17:13:10] [tg_io   ]     n = pf_db.recover_stuck_sending(RECOVER_STUCK_AFTER_SEC)
+[17:13:10] [tg_io   ]   File "D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\scripts\pf_db.py", line 809, in recover_stuck_sending
+[17:13:10] [tg_io   ]     cur = get_db().execute(
+[17:13:10] [tg_io   ]         "UPDATE outgoing_messages "
+[17:13:10] [tg_io   ]     ...<3 lines>...
+[17:13:10] [tg_io   ]         (threshold, cutoff_iso),
+[17:13:10] [tg_io   ]     )
+[17:13:10] [tg_io   ] sqlite3.OperationalError: database is locked
+[17:13:10] [tg_io   ] exited with code 1. Restart in 30s...
+[17:13:33] [notifier] [2026-04-15 17:13:33] Stopped by user.
+[17:13:33] [scanner ] [2026-04-15 17:13:33] Stopped by user.
+[17:13:33] [notifier] stopping (shutdown requested)
+[17:13:33] [scanner ] stopping (shutdown requested)
+[17:24:19] [launcher] ============================================================
+[17:24:19] [launcher] ProjectFinder launcher started
+[17:24:19] [launcher] Services: ['scanner', 'notifier', 'tg_io', 'bot_hndl', 'email_io']
+[17:24:19] [launcher] Logs: D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\logs\projectfinder.log
+[17:24:19] [launcher] Press Ctrl+C to stop all services gracefully
+[17:24:19] [launcher] ============================================================
+[17:24:19] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[17:24:20] [scanner ] [2026-04-15 17:24:20] Watch mode (interval: 30 min). Ctrl+C to stop.
+[17:24:20] [scanner ] [2026-04-15 17:24:20] No enabled Telegram sources in sources.json.
+[17:24:20] [scanner ] [2026-04-15 17:24:20] Cycle done. 0 new. Sleeping 30 min...
+[17:24:20] [notifier] starting: telegram_notifier.py --watch --interval 60
+[17:24:20] [notifier] [2026-04-15 17:24:20] Watch mode started (interval: 60s). Ctrl+C to stop.
+[17:24:21] [tg_io   ] starting: telegram_io.py --watch
+[17:24:22] [bot_hndl] starting: bot_handler.py
+[17:24:22] [bot_hndl] [17:24:22] [bot     ] bot handler started; polling getUpdates...
+[17:24:23] [email_io] starting: email_io.py --watch
+[17:24:23] [email_io] [17:24:23] [email   ] email I/O started (SMTP send + IMAP listen)
+[17:24:23] [tg_io   ] [17:24:23] [tg_io  ] connected as Telegram user self
+[17:24:23] [tg_io   ] [17:24:23] [tg_io  ] listener active. Polling outgoing every 30s. Ctrl+C to stop.
+[17:54:20] [scanner ] [2026-04-15 17:54:20] No enabled Telegram sources in sources.json.
+[17:54:20] [scanner ] [2026-04-15 17:54:20] Cycle done. 0 new. Sleeping 30 min...
+[18:10:33] [email_io] [18:10:33] [email   ] stopped by user
+[18:10:33] [scanner ] [2026-04-15 18:10:33] Stopped by user.
+[18:10:33] [notifier] [2026-04-15 18:10:33] Stopped by user.
+[18:10:33] [notifier] stopping (shutdown requested)
+[18:10:33] [email_io] stopping (shutdown requested)
+[18:10:33] [tg_io   ] Traceback (most recent call last):
+[18:10:33] [scanner ] stopping (shutdown requested)
+[18:10:33] [tg_io   ] stopping (shutdown requested)
+[19:14:53] [launcher] ============================================================
+[19:14:53] [launcher] ProjectFinder launcher started
+[19:14:53] [launcher] Services: ['scanner', 'notifier', 'tg_io', 'bot_hndl', 'email_io']
+[19:14:53] [launcher] Logs: D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\logs\projectfinder.log
+[19:14:53] [launcher] Press Ctrl+C to stop all services gracefully
+[19:14:53] [launcher] ============================================================
+[19:14:53] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[19:14:54] [notifier] starting: telegram_notifier.py --watch --interval 60
+[19:14:55] [scanner ] [2026-04-15 19:14:55] Watch mode (interval: 30 min). Ctrl+C to stop.
+[19:14:55] [scanner ] [2026-04-15 19:14:55] No enabled Telegram sources in sources.json.
+[19:14:55] [scanner ] [2026-04-15 19:14:55] Cycle done. 0 new. Sleeping 30 min...
+[19:14:55] [notifier] [2026-04-15 19:14:55] Watch mode started (interval: 60s). Ctrl+C to stop.
+[19:14:55] [notifier] [2026-04-15 19:14:55] sent notif notif-53a42cf3 (cycle_summary)
+[19:14:55] [notifier] [2026-04-15 19:14:55] Sent 1 notifications.
+[19:14:55] [tg_io   ] starting: telegram_io.py --watch
+[19:14:56] [bot_hndl] starting: bot_handler.py
+[19:14:57] [bot_hndl] [19:14:57] [bot     ] bot handler started; polling getUpdates...
+[19:14:57] [email_io] starting: email_io.py --watch
+[19:14:58] [email_io] [19:14:58] [email   ] email I/O started (SMTP send + IMAP listen)
+[19:14:58] [email_io] [19:14:58] [email   ]   -> fraterpavlo@gmail.com: 'Application for Senior React Frontend Engineer — Ivan'
+[19:14:58] [tg_io   ] [19:14:58] [tg_io  ] connected as Telegram user self
+[19:14:58] [tg_io   ] [19:14:58] [tg_io  ] listener active. Polling outgoing every 30s. Ctrl+C to stop.
+[19:14:58] [tg_io   ] [19:14:58] [tg_io  ]   -> @fraterpavlo: 'Добрый день!\n\nУвидел вашу вакансию Full-stack developer (Rea'...
+[19:15:01] [email_io] [19:15:01] [email   ]     OK
+[19:15:01] [email_io] [19:15:01] [email   ] sent=1 failed=0
+[19:15:14] [tg_io   ] [19:15:14] [tg_io  ] sent=1 failed=0
+[19:39:23] [email_io] [19:39:23] [email   ] stopped by user
+[19:39:23] [notifier] [2026-04-15 19:39:23] Stopped by user.
+[19:39:23] [scanner ] [2026-04-15 19:39:23] Stopped by user.
+[19:39:23] [tg_io   ] Traceback (most recent call last):
+[19:39:23] [notifier] stopping (shutdown requested)
+[19:39:23] [email_io] stopping (shutdown requested)
+[19:39:23] [scanner ] stopping (shutdown requested)
+[19:39:23] [tg_io   ] stopping (shutdown requested)
+[19:39:33] [launcher] All services stopped. Bye.
+[19:49:24] [launcher] ============================================================
+[19:49:24] [launcher] ProjectFinder launcher started
+[19:49:24] [launcher] Services: ['scanner', 'notifier', 'tg_io', 'bot_hndl', 'email_io']
+[19:49:24] [launcher] Logs: D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\logs\projectfinder.log
+[19:49:24] [launcher] Press Ctrl+C to stop all services gracefully
+[19:49:24] [launcher] ============================================================
+[19:49:24] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[19:49:25] [scanner ] [2026-04-15 19:49:25] Watch mode (interval: 30 min). Ctrl+C to stop.
+[19:49:25] [scanner ] [2026-04-15 19:49:25] Scanning 1 Telegram channels...
+[19:49:25] [notifier] starting: telegram_notifier.py --watch --interval 60
+[19:49:25] [notifier] [2026-04-15 19:49:25] Watch mode started (interval: 60s). Ctrl+C to stop.
+[19:49:26] [tg_io   ] starting: telegram_io.py --watch
+[19:49:26] [scanner ] [2026-04-15 19:49:26]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[19:49:27] [scanner ] [2026-04-15 19:49:27]     scanned 6 messages, found 5 new jobs
+[19:49:27] [scanner ] [2026-04-15 19:49:27] Added 5 new jobs to DB
+[19:49:27] [scanner ] [2026-04-15 19:49:27] Cycle done. 5 new. Sleeping 30 min...
+[19:49:27] [bot_hndl] starting: bot_handler.py
+[19:49:27] [bot_hndl] [19:49:27] [bot     ] bot handler started; polling getUpdates...
+[19:49:28] [email_io] starting: email_io.py --watch
+[19:49:28] [email_io] [19:49:28] [email   ] email I/O started (SMTP send + IMAP listen)
+[19:49:28] [tg_io   ] [19:49:28] [tg_io  ] connected as Telegram user self
+[19:49:28] [tg_io   ] [19:49:28] [tg_io  ] listener active. Polling outgoing every 30s. Ctrl+C to stop.
+[20:09:30] [email_io] [20:09:30] [email   ] stopped by user
+[20:09:30] [notifier] [2026-04-15 20:09:30] Stopped by user.
+[20:09:30] [scanner ] [2026-04-15 20:09:30] Stopped by user.
+[20:09:30] [tg_io   ] Traceback (most recent call last):
+[20:09:31] [email_io] stopping (shutdown requested)
+[20:09:31] [notifier] stopping (shutdown requested)
+[20:09:31] [scanner ] stopping (shutdown requested)
+[20:09:31] [tg_io   ] stopping (shutdown requested)
+[20:09:33] [bot_hndl] [20:09:33] [bot     ] stopped by user
+[20:09:33] [bot_hndl] stopping (shutdown requested)
+[20:09:33] [launcher] All services stopped. Bye.
+[20:25:35] [launcher] ============================================================
+[20:25:35] [launcher] ProjectFinder launcher started
+[20:25:35] [launcher] Services: ['scanner', 'notifier', 'tg_io', 'bot_hndl', 'email_io']
+[20:25:35] [launcher] Logs: D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\logs\projectfinder.log
+[20:25:35] [launcher] Press Ctrl+C to stop all services gracefully
+[20:25:35] [launcher] ============================================================
+[20:25:35] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[20:25:36] [scanner ] [2026-04-15 20:25:36] Watch mode (interval: 30 min). Ctrl+C to stop.
+[20:25:36] [scanner ] [2026-04-15 20:25:36] Scanning 1 Telegram channels...
+[20:25:36] [notifier] starting: telegram_notifier.py --watch --interval 60
+[20:25:36] [notifier] [2026-04-15 20:25:36] Watch mode started (interval: 60s). Ctrl+C to stop.
+[20:25:37] [notifier] [2026-04-15 20:25:37] sent notif notif-7d59b2a8 (cycle_summary)
+[20:25:37] [notifier] [2026-04-15 20:25:37] Sent 1 notifications.
+[20:25:37] [tg_io   ] starting: telegram_io.py --watch
+[20:25:37] [scanner ] [2026-04-15 20:25:37]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[20:25:37] [scanner ] [2026-04-15 20:25:37]     scanned 6 messages, found 5 new jobs
+[20:25:37] [scanner ] [2026-04-15 20:25:37] Added 5 new jobs to DB
+[20:25:37] [scanner ] [2026-04-15 20:25:37] Cycle done. 5 new. Sleeping 30 min...
+[20:25:38] [bot_hndl] starting: bot_handler.py
+[20:25:38] [bot_hndl] [20:25:38] [bot     ] bot handler started; polling getUpdates...
+[20:25:39] [email_io] starting: email_io.py --watch
+[20:25:39] [email_io] [20:25:39] [email   ] email I/O started (SMTP send + IMAP listen)
+[20:25:39] [tg_io   ] [20:25:39] [tg_io  ] connected as Telegram user self
+[20:25:39] [tg_io   ] [20:25:39] [tg_io  ] listener active. Polling outgoing every 30s. Ctrl+C to stop.
+[20:55:37] [scanner ] [2026-04-15 20:55:37] Scanning 1 Telegram channels...
+[20:55:39] [scanner ] [2026-04-15 20:55:39]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[20:55:39] [scanner ] [2026-04-15 20:55:39]     scanned 6 messages, found 0 new jobs
+[20:55:39] [scanner ] [2026-04-15 20:55:39] No new jobs to add.
+[20:55:39] [scanner ] [2026-04-15 20:55:39] Cycle done. 0 new. Sleeping 30 min...
+[21:25:39] [scanner ] [2026-04-15 21:25:39] Scanning 1 Telegram channels...
+[21:25:40] [scanner ] [2026-04-15 21:25:40]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[21:25:41] [scanner ] [2026-04-15 21:25:41]     scanned 6 messages, found 0 new jobs
+[21:25:41] [scanner ] [2026-04-15 21:25:41] No new jobs to add.
+[21:25:41] [scanner ] [2026-04-15 21:25:41] Cycle done. 0 new. Sleeping 30 min...
+[21:55:41] [scanner ] [2026-04-15 21:55:41] Scanning 1 Telegram channels...
+[21:55:42] [scanner ] [2026-04-15 21:55:42]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[21:55:42] [scanner ] [2026-04-15 21:55:42]     scanned 6 messages, found 0 new jobs
+[21:55:42] [scanner ] [2026-04-15 21:55:42] No new jobs to add.
+[21:55:42] [scanner ] [2026-04-15 21:55:42] Cycle done. 0 new. Sleeping 30 min...
+[22:25:42] [scanner ] [2026-04-15 22:25:42] Scanning 1 Telegram channels...
+[22:25:44] [scanner ] [2026-04-15 22:25:44]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[22:25:44] [scanner ] [2026-04-15 22:25:44]     scanned 6 messages, found 0 new jobs
+[22:25:44] [scanner ] [2026-04-15 22:25:44] No new jobs to add.
+[22:25:44] [scanner ] [2026-04-15 22:25:44] Cycle done. 0 new. Sleeping 30 min...
+[22:55:44] [scanner ] [2026-04-15 22:55:44] Scanning 1 Telegram channels...
+[22:55:46] [scanner ] [2026-04-15 22:55:46]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[22:55:46] [scanner ] [2026-04-15 22:55:46]     scanned 6 messages, found 0 new jobs
+[22:55:46] [scanner ] [2026-04-15 22:55:46] No new jobs to add.
+[22:55:46] [scanner ] [2026-04-15 22:55:46] Cycle done. 0 new. Sleeping 30 min...
+[23:25:46] [scanner ] [2026-04-15 23:25:46] Scanning 1 Telegram channels...
+[23:25:47] [scanner ] [2026-04-15 23:25:47]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[23:25:48] [scanner ] [2026-04-15 23:25:48]     scanned 6 messages, found 0 new jobs
+[23:25:48] [scanner ] [2026-04-15 23:25:48] No new jobs to add.
+[23:25:48] [scanner ] [2026-04-15 23:25:48] Cycle done. 0 new. Sleeping 30 min...
+[23:55:48] [scanner ] [2026-04-15 23:55:48] Scanning 1 Telegram channels...
+[23:55:49] [scanner ] [2026-04-15 23:55:49]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[23:55:49] [scanner ] [2026-04-15 23:55:49]     scanned 6 messages, found 0 new jobs
+[23:55:49] [scanner ] [2026-04-15 23:55:49] No new jobs to add.
+[23:55:49] [scanner ] [2026-04-15 23:55:49] Cycle done. 0 new. Sleeping 30 min...
+[00:25:49] [scanner ] [2026-04-16 00:25:49] Scanning 1 Telegram channels...
+[00:25:51] [scanner ] [2026-04-16 00:25:51]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[00:25:52] [scanner ] [2026-04-16 00:25:52]     scanned 6 messages, found 0 new jobs
+[00:25:52] [scanner ] [2026-04-16 00:25:52] No new jobs to add.
+[00:25:52] [scanner ] [2026-04-16 00:25:52] Cycle done. 0 new. Sleeping 30 min...
+[00:55:52] [scanner ] [2026-04-16 00:55:52] Scanning 1 Telegram channels...
+[00:55:53] [scanner ] [2026-04-16 00:55:53]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[00:55:53] [scanner ] [2026-04-16 00:55:53]     scanned 6 messages, found 0 new jobs
+[00:55:53] [scanner ] [2026-04-16 00:55:53] No new jobs to add.
+[00:55:53] [scanner ] [2026-04-16 00:55:53] Cycle done. 0 new. Sleeping 30 min...
+[01:25:53] [scanner ] [2026-04-16 01:25:53] Scanning 1 Telegram channels...
+[01:25:55] [scanner ] [2026-04-16 01:25:55]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[01:25:55] [scanner ] [2026-04-16 01:25:55]     scanned 6 messages, found 0 new jobs
+[01:25:55] [scanner ] [2026-04-16 01:25:55] No new jobs to add.
+[01:25:55] [scanner ] [2026-04-16 01:25:55] Cycle done. 0 new. Sleeping 30 min...
+[01:55:55] [scanner ] [2026-04-16 01:55:55] Scanning 1 Telegram channels...
+[01:55:56] [scanner ] [2026-04-16 01:55:56]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[01:55:57] [scanner ] [2026-04-16 01:55:57]     scanned 6 messages, found 0 new jobs
+[01:55:57] [scanner ] [2026-04-16 01:55:57] No new jobs to add.
+[01:55:57] [scanner ] [2026-04-16 01:55:57] Cycle done. 0 new. Sleeping 30 min...
+[14:26:30] [launcher] ============================================================
+[14:26:30] [launcher] ProjectFinder launcher started
+[14:26:30] [launcher] Services: ['ops_app']
+[14:26:30] [launcher] Logs: D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\logs\projectfinder.log
+[14:26:30] [launcher] Press Ctrl+C to stop all services gracefully
+[14:26:30] [launcher] ============================================================
+[14:26:30] [ops_app ] starting: ops_applier.py --watch --interval 5
+[14:26:30] [ops_app ] [14:26:30] [ops_app ] started; pending=0, remembered_keys=0, journal_mode=WAL
+[17:32:43] [launcher] ============================================================
+[17:32:43] [launcher] ProjectFinder launcher started
+[17:32:43] [launcher] Services: ['ops_app', 'scanner', 'notifier', 'tg_io', 'bot_hndl', 'email_io']
+[17:32:43] [launcher] Logs: D:\JOB\IVAN.NOVIKOV\ProjectFinder\project-finder\logs\projectfinder.log
+[17:32:43] [launcher] Press Ctrl+C to stop all services gracefully
+[17:32:43] [launcher] ============================================================
+[17:32:43] [ops_app ] starting: ops_applier.py --watch --interval 5
+[17:32:43] [ops_app ] [17:32:43] [ops_app ] started; pending=0, remembered_keys=1, journal_mode=WAL
+[17:32:44] [scanner ] starting: telegram_scanner.py --watch --interval 30
+[17:32:45] [scanner ] [2026-04-16 17:32:45] Watch mode (interval: 30 min). Ctrl+C to stop.
+[17:32:45] [scanner ] [2026-04-16 17:32:45] Scanning 1 Telegram channels...
+[17:32:45] [notifier] starting: telegram_notifier.py --watch --interval 60
+[17:32:46] [notifier] [2026-04-16 17:32:46] Watch mode started (interval: 60s). Ctrl+C to stop.
+[17:32:46] [scanner ] [2026-04-16 17:32:46]   scanning Test Channel ProjectFinder (@testChannelProjectFinderPingineT)...
+[17:32:46] [tg_io   ] starting: telegram_io.py --watch
+[17:32:47] [scanner ] [2026-04-16 17:32:47]     scanned 6 messages, found 5 new jobs
+[17:32:47] [scanner ] [2026-04-16 17:32:47] Added 5 new jobs to DB
+[17:32:47] [scanner ] [2026-04-16 17:32:47] Cycle done. 5 new. Sleeping 30 min...
+[17:32:47] [bot_hndl] starting: bot_handler.py
+[17:32:48] [bot_hndl] [17:32:48] [bot     ] bot handler started; polling getUpdates...
+[17:32:48] [tg_io   ] [17:32:48] [tg_io  ] connected as Telegram user self
+[17:32:48] [tg_io   ] [17:32:48] [tg_io  ] listener active. Polling outgoing every 30s. Ctrl+C to stop.
+[17:32:48] [email_io] starting: email_io.py --watch
+[17:32:49] [email_io] [17:32:49] [email   ] email I/O started (SMTP send + IMAP listen)
+[17:38:08] [ops_app ] [17:38:08] [ops_app ] applied 1776350288220-7f6ed2cf5b3c49fd9007405a14272809.json — notify_admin
+[17:38:08] [ops_app ] [17:38:08] [ops_app ] cycle: applied=1 dup=0 failed=0
+[17:38:43] [ops_app ] [17:38:43] [ops_app ] applied 1776350322185-6a14beca13cc36b3051c22d688c2089cf2988255.json — insert_notification
+[17:38:43] [ops_app ] [17:38:43] [ops_app ] cycle: applied=1 dup=0 failed=0
+[17:38:46] [notifier] [2026-04-16 17:38:46] sent notif notif-6704c27f (admin_alert)
+[17:38:46] [notifier] [2026-04-16 17:38:46] dropped notif notif-9dffddbc — no chat_id
+[17:38:46] [notifier] [2026-04-16 17:38:46] Sent 1 notifications.
+[17:39:46] [notifier] [2026-04-16 17:39:46] retry: requeued 1 failed notifications back to pending
+[17:39:46] [notifier] [2026-04-16 17:39:46] dropped notif notif-9dffddbc — no chat_id
+[17:40:13] [ops_app ] [17:40:13] [ops_app ] applied 1776350409164-df275ad92fb64135b33cdc5837c583b4.json — state_set
+[17:40:13] [ops_app ] [17:40:13] [ops_app ] applied 1776350409173-2bc24fbd91094aef89d473f5bcb7b792.json — state_set (IntegrityError treated as idempotent: NOT NULL constraint failed: service_state.value_json)
+[17:40:13] [ops_app ] [17:40:13] [ops_app ] cycle: applied=2 dup=0 failed=0
+[17:40:46] [notifier] [2026-04-16 17:40:46] retry: requeued 1 failed notifications back to pending
+[17:40:46] [notifier] [2026-04-16 17:40:46] dropped notif notif-9dffddbc — no chat_id
+[17:41:46] [notifier] [2026-04-16 17:41:46] retry: requeued 1 failed notifications back to pending
+[17:41:46] [notifier] [2026-04-16 17:41:46] dropped notif notif-9dffddbc — no chat_id
+[17:42:46] [notifier] [2026-04-16 17:42:46] retry: requeued 1 failed notifications back to pending
+[17:42:46] [notifier] [2026-04-16 17:42:46] dropped notif notif-9dffddbc — no chat_id
+[17:43:08] [email_io] exited with code 3221225786. Restart in 30s...
+[17:43:08] [bot_hndl] exited with code 3221225786. Restart in 30s...
+[17:43:08] [tg_io   ] exited with code 3221225786. Restart in 30s...
+[17:43:08] [notifier] exited with code 3221225786. Restart in 30s...
+[17:43:08] [scanner ] exited with code 3221225786. Restart in 30s...
+[17:43:08] [ops_app ] exited with code 3221225786. Restart in 30s...

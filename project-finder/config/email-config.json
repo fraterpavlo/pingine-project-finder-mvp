@@ -1,0 +1,31 @@
+{
+  "email": {
+    "enabled": true,
+    "_from_note": "Поля from_name/from_address удалены из транспортной секции. Identity берётся из профиля разработчика (developers/<id>.json → fixed.email_identity.from_name / fixed.email_identity.from_address), fallback — smtp.username. См. email_io.resolve_from_identity().",
+    "smtp": {
+      "host": "smtp.gmail.com",
+      "port": 587,
+      "use_tls": true,
+      "username": "suprrama@gmail.com",
+      "password": null,
+      "notes": "Gmail app-password (16 знаков, БЕЗ пробелов). Получить на myaccount.google.com → Security → 2-Step Verification → App passwords."
+    },
+    "imap": {
+      "host": "imap.gmail.com",
+      "port": 993,
+      "use_ssl": true,
+      "username": "suprrama@gmail.com",
+      "password": null,
+      "folder": "INBOX",
+      "notes": "Тот же app-password. Сервис проверяет новые письма от известных контактов из conversations.json."
+    }
+  },
+  "_setup_instructions": [
+    "1. Включи 2-факторную аутентификацию в Google: myaccount.google.com → Security → 2-Step Verification",
+    "2. Создай app-password: myaccount.google.com → Security → App passwords → введи название 'ProjectFinder' → нажми Create",
+    "3. Скопируй 16-значный пароль (вида: abcd efgh ijkl mnop)",
+    "4. Открой config/secrets.json и вставь app-password в email-config.json.email.smtp.password и imap.password",
+    "5. Поставь email.enabled = true в этом файле",
+    "6. Перезапусти projectfinder.py — сервис email_io начнёт работать"
+  ]
+}

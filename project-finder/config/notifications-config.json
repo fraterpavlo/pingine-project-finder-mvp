@@ -1,0 +1,36 @@
+{
+  "telegram_bot": {
+    "enabled": true,
+    "bot_username": "@CoworkProjectFinderNotiesBot",
+    "bot_token": null,
+    "notes": "Бот создан через @BotFather. Токен кладётся в config/secrets.json (поле notifications-config.json.telegram_bot.bot_token). Не коммитить."
+  },
+  "_recipients_schema": {
+    "id": "уникальный идентификатор получателя",
+    "name": "имя для логов",
+    "telegram_username": "@username (опционально, для справки)",
+    "telegram_chat_id": "числовой chat_id из getUpdates",
+    "email": "адрес для email-уведомлений (можно менять)",
+    "is_admin": "true/false — получает ли системные алерты (notify_admin: snapshot пропал, БД повреждена, outgoing exhausted и т.п.). Если ни у кого не is_admin=true, fallback идёт по notify_on.",
+    "notify_on": "массив уровней: LOW / MEDIUM / HIGH — какие confidence-уровни уведомлять. Для системных алертов используется отдельный is_admin.",
+    "channels": "массив каналов: telegram / email — куда отправлять.",
+    "_notes": "Чтобы добавить ещё одного получателя — скопируй блок и измени значения. Каждый получает уведомления независимо."
+  },
+  "recipients": [
+    {
+      "id": "admin",
+      "name": "Frater Pavlo",
+      "telegram_username": "@FraterPavlo",
+      "telegram_chat_id": "443692754",
+      "email": "ivan.novikov.developer@gmail.com",
+      "is_admin": true,
+      "notify_on": ["LOW", "MEDIUM"],
+      "channels": ["telegram", "email"],
+      "notes": "Telegram — push через локальный скрипт. is_admin=true → получает системные алерты."
+    }
+  ],
+  "notification_rules": {
+    "_note": "Шаблоны хранятся в коде SKILL.md (dialogue-agent, evaluate-and-initiate). Этот блок оставлен как справка по уровням urgency, но реальный текст уведомления формирует скилл.",
+    "urgency_levels": ["low", "normal", "high"]
+  }
+}

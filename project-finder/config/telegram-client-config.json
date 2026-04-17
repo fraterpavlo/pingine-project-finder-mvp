@@ -1,0 +1,20 @@
+{
+  "telegram_client": {
+    "enabled": true,
+    "api_id": null,
+    "api_hash": null,
+    "app_title": "CCcommsrv",
+    "session_name": "projectfinder",
+    "notes": "Credentials for Telegram Client API (telethon). api_id и api_hash лежат в config/secrets.json (поле telegram-client-config.json.telegram_client). Session file 'projectfinder.session' создаётся на первом запуске в scripts/. Номер телефона спрашивается один раз интерактивно."
+  },
+  "scan_settings": {
+    "max_messages_per_channel": 200,
+    "max_age_days": 30,
+    "channels_source": "config/sources.json (use sources where scan_method == 'telegram')"
+  },
+  "_security_notes": [
+    "Этот файл содержит чувствительные данные — НЕ коммитить в публичный репозиторий",
+    "Файл .session — это активная авторизация. Если кто-то получит его — получит доступ к аккаунту. Хранить только локально.",
+    "Если приложение CCcommsrv удалит другой пользователь — этот скрипт перестанет работать. Тогда придётся создать новое."
+  ]
+}

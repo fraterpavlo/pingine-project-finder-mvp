@@ -1,0 +1,28 @@
+{
+  "_note_policy_source_of_truth": "Решение auto-send или needs_review принимает pf_policy.decide_outgoing_status() в scripts/pf_policy.py. Приоритеты (выигрывает последнее определённое): (1) first_message_policy.default ниже, (2) developers/<id>.json.auto_reply_settings.auto_send_first_message, (3) jobs.match_json.auto_send. Раньше здесь был дубль global_defaults.auto_send_first_message=false, который конфликтовал с first_message_policy.default=auto_send — теперь единственный источник истины это first_message_policy + dev-профиль.",
+  "global_defaults": {
+    "auto_reply_enabled": true,
+    "send_drafts_for_review": true,
+    "rate_limits": {
+      "max_outgoing_per_hour": 10,
+      "max_outgoing_per_day": 50,
+      "min_seconds_between_messages": 30,
+      "min_seconds_per_recipient": 60
+    },
+    "human_like_delay": {
+      "enabled": true,
+      "min_seconds": 30,
+      "max_seconds": 180,
+      "applies_to": "replies (not first contact)"
+    }
+  },
+  "first_message_policy": {
+    "default": "auto_send",
+    "notes": "Первое сообщение отправляется автоматически (без ревью), т.к. шаблонно и низкий риск. Если разработчик предпочитает ревью первого сообщения — auto_send_first_message=false в его профиле переопределит это."
+  },
+  "_how_to_use": [
+    "global_defaults.auto_reply_enabled — главный выключатель: false = всё только в черновики",
+    "Поле auto_reply_settings в developers/{id}.json переопределяет global_defaults для конкретного разработчика",
+    "Поле auto_reply_settings внутри jobs/[i] (если задано) переопределяет всё для конкретной вакансии"
+  ]
+}
